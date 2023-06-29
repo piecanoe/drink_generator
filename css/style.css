@@ -36,8 +36,9 @@ img {
 .section-title {
     font-size: 20px;
     margin: 0;
+    color: white;
 }
 
-section .ingredient {
+section .ingredient{
     list-style-type: none;
 }
