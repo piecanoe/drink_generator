@@ -8,33 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,800;1,500;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>What Should I Drink Tonight?</h1>
 
-    <button type="button">Make me a drink!</button>
+    <div id="button">
+        <button type="button">Make me a drink!</button>
+    </div>
 
     <h2 id="drink"></h2>
 
-    <img src="" alt="">
+    <div id="generated">
+        <img src="" alt="">
 
-    <section id="ingredient-section">
-        <h2 class="section-title">Ingredients</h2>
-        <p id="ingredient1"></p>
-        <p id="ingredient2"></p>
-        <p id="ingredient3"></p>
-        <p id="ingredient4"></p>
-        <p id="ingredient5"></p>
-        <p id="ingredient6"></p>
-        <p id="ingredient7"></p>
-        <p id="ingredient8"></p>
-    </section>
-
-    <section id="recipe-section">
-        <h2 class="section-title">Recipe</h2>
-        <p id="recipe"></p>
-    </section>
+        <section id="ingredient-section">
+            <h3 class="section-title">Ingredients</h3>
+            <ul>
+                <li class="ingredient" id="ingredient1"></li>
+                <li class="ingredient" id="ingredient2"></li>
+                <li class="ingredient" id="ingredient3"></li>
+                <li class="ingredient" id="ingredient4"></li>
+                <li class="ingredient" id="ingredient5"></li>
+                <li class="ingredient" id="ingredient6"></li>
+                <li class="ingredient" id="ingredient7"></li>
+                <li class="ingredient" id="ingredient8"></li>
+            </ul>
+        </section>
+    
+        <section id="recipe-section">
+            <h3 class="section-title">Recipe</h3>
+            <p id="recipe"></p>
+        </section>
+    </div>
 
     <script type="text/javascript" src="js/main.js"></script>
 
