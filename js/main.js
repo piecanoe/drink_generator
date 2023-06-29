@@ -1,6 +1,8 @@
 document.querySelector('button').addEventListener('click', getDrink)
 document.querySelector('#ingredient-section').style.display = "none";
 document.querySelector('#recipe-section').style.display = "none";
+document.querySelector('#measure-section').style.display = "none";
+document.querySelector('#full-drink').style.display = "none";
 
 function getDrink() {
 
@@ -19,11 +21,21 @@ function getDrink() {
       document.querySelector('#ingredient6').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strIngredient6
       document.querySelector('#ingredient7').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strIngredient7
       document.querySelector('#ingredient8').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strIngredient8
+      document.querySelector('#measure1').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure1
+      document.querySelector('#measure2').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure2
+      document.querySelector('#measure3').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure3
+      document.querySelector('#measure4').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure4
+      document.querySelector('#measure5').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure5
+      document.querySelector('#measure6').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure6
+      document.querySelector('#measure7').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure7
+      document.querySelector('#measure8').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strMeasure8
       document.querySelector('img').src = data.drinks[Math.floor(Math.random() * data.drinks.length)].strDrinkThumb
       document.querySelector('#recipe').innerText = data.drinks[Math.floor(Math.random() * data.drinks.length)].strInstructions
     
       document.querySelector('#ingredient-section').style.display = "block";
       document.querySelector('#recipe-section').style.display = "block";
+      document.querySelector('#measure-section').style.display = "block";
+      document.querySelector('#full-drink').style.display = "flex";
     })
 
 

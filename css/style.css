@@ -1,23 +1,36 @@
 html {
-    background-color: #272f36;
+    background-color: #38247f;
     font-family: 'Mulish', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
     font-size: 45px;
-    color: yellowgreen;
+    color: rgb(63, 226, 49);
 }
 
-#button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.button {
     transition: all 0.4s;
+    background-color:rgb(63, 226, 49);
+    color: #38247f;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    border:3px solid #fefeff;
+    margin: -10px 0px
 }
 
-#button:hover {
+.button:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #drink {
@@ -27,14 +40,15 @@ h1 {
     color: white;
 }
 
-#generated {
+#full-drink {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
-    gap: 40px;
-    border: 5px solid white;
+    gap: 15px;
     margin: 10px;
     padding: 20px;
+    border: 5px solid white;
+    margin: -10px 0px
 }
 
 img {
@@ -58,4 +72,16 @@ section ul {
 section .ingredient{
     list-style-type: none;
     padding-left: 0;
+}
+
+#measure-section {
+    width: 150px;
+}
+
+#ingredients-section {
+    width: 300px;
+}
+
+#recipe-section {
+    width: 200px;
 }

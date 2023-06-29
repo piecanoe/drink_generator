@@ -13,16 +13,28 @@
 <body>
     <h1>What Should I Drink Tonight?</h1>
 
-    <div id="button">
-        <button type="button">Make me a drink!</button>
-    </div>
+    <button type="button" class="button">Make me a drink!</button>
 
     <h2 id="drink"></h2>
 
-    <div id="generated">
+    <div id="full-drink">
         <img src="" alt="">
 
-        <section id="ingredient-section">
+        <section class="sections" id="measure-section">
+            <h3 class="section-title">Amount</h3>
+            <ul>
+                <li class="measure" id="measure1"></li>
+                <li class="measure" id="measure2"></li>
+                <li class="measure" id="measure3"></li>
+                <li class="measure" id="measure4"></li>
+                <li class="measure" id="measure5"></li>
+                <li class="measure" id="measure6"></li>
+                <li class="measure" id="measure7"></li>
+                <li class="measure" id="measure8"></li>
+            </ul>
+        </section>
+
+        <section class="sections" id="ingredient-section">
             <h3 class="section-title">Ingredients</h3>
             <ul>
                 <li class="ingredient" id="ingredient1"></li>
@@ -36,7 +48,7 @@
             </ul>
         </section>
     
-        <section id="recipe-section">
+        <section class="sections" id="recipe-section">
             <h3 class="section-title">Recipe</h3>
             <p id="recipe"></p>
         </section>
